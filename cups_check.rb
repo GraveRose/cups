@@ -8,7 +8,7 @@ include Msf::Auxiliary::Scanner
 
   def initialize(info = {})
     super(update_info(info,
-      'Name'        => 'CUPS Scanner',
+      'Name'        => 'CUPS Callback Check',
       'Description' => %q{
         This module will check to see if the remote host is vulnerable to CVE-2024-47176. It is required that UDP/631 be allowed to reach the remote host otherwise this module will show that the host is unaffected. In addition, the remote host must be able to send TCP traffic to the local port (LPORT) specified or else this will cause it to fail as well.
       },
